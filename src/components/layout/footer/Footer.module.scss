@@ -1,0 +1,43 @@
+.footer {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: right;
+
+  @include vp-375 {
+    padding: 24px 20px;
+    justify-content: start;
+  }
+}
+
+.socialList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.socialItem {
+  display: flex;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+
+  @include vp-375 {
+    width: 24px;
+    height: 24px;
+  }
+}

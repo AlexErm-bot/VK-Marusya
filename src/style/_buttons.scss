@@ -1,0 +1,68 @@
+@use './mixins' as *;
+
+.primary,
+.secondary,
+.iconBtn {
+  cursor: pointer;
+  border-radius: 28px;
+  text-decoration: none;
+  border: 1px solid #00000066;
+  padding: 16px 48px;
+  background-color: #393B3C;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  transition:
+    background-color 0.3s ease-out,
+    color 0.3s ease-out,
+    border 0.3s ease-out;
+
+  @include vp-375 {
+    padding: 16px 40px;
+  }
+
+  &:disabled {
+    background-color: #747474;
+    border: 1px solid #00000066;
+    color: #FFFFFF80;
+    cursor: auto;
+  }
+
+  &:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
+    transition:
+      background-color 0.3s ease-out,
+      color 0.3s ease-out,
+      border 0.3s ease-out;
+  }
+}
+
+.iconBtn {
+  display: flex;
+  padding: 16px 22px;
+  align-items: center;
+  max-width: 68px;
+}
+
+.primary {
+  width: max-content;
+  border: 1px solid transparent;
+  background-color: #67A5EB;
+  &:hover {
+    background-color: #B4A9FF;
+    color: white;
+    border: 1px solid transparent;
+  }
+
+  @include vp-375 {
+    width: 100%;
+  }
+
+  &:disabled {
+    background-color: #45526E;
+    cursor: auto;
+  }
+}

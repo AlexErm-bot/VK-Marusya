@@ -1,0 +1,136 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(224px, 1fr));
+    gap: 40px;
+    width: 100%;
+
+    @include vp-375 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+.card {
+    width: 224px;
+    height: 336px;
+}
+
+.genresList {
+    margin: 0;
+    margin-top: 184px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 64px 40px;
+
+    @include vp-375 {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+.genresItem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.genresLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 304px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #0A0B0B;
+    border: 1px solid #FFFFFF40;
+
+    @include vp-375 {
+        width: 335px;
+    }
+}
+
+.genresName {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.bannerSection {
+    margin: 32px 80px 40px;
+
+    @include vp-375 {
+        margin: 0 20px 24px;
+    }
+}
+
+.bannerMovie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+    @include vp-375 {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+}
+
+.bannerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex: 1;
+}
+
+.bannerInfo {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: flex-start;
+    width: 100%;
+
+    @include vp-375 {
+        margin-top: 24px;
+        gap: 12px;
+    }
+}
+
+.bannerPreface {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bannerTitle {
+    margin: 0;
+    width: 100%;
+}
+
+.bannerPlot {
+    width: 100%;
+    max-width: 600px;
+}
+
+.bannerButtons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.bannerPoster {
+    max-width: 680px;
+    width: 100%;
+
+    @include vp-375 {
+        width: 100%;
+    }
+}

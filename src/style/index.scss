@@ -1,0 +1,20 @@
+@use './buttons';
+
+* {
+  font-family: "Play", sans-serif
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #000000 0%, rgba(39, 36, 36, 0.7) 100%),
+    linear-gradient(178.73deg, rgba(39, 135, 245, 0.18) -17.53%, rgba(163, 147, 245, 0.18) 131.74%);
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.status {
+  padding: 60px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+}

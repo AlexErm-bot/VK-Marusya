@@ -1,0 +1,137 @@
+.section {
+  margin: 32px 80px 0;
+
+  @include vp-375 {
+    margin: 0 20px 24px;
+  }
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+
+  @include vp-375 {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.info {
+  margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: flex-start;
+
+  @include vp-375 {
+    margin-top: 24px;
+    gap: 12px;
+  }
+}
+
+.preface {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  color: #ffffff;
+
+  @include vp-375 {
+    font-size: 14px;
+  }
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+}
+
+.rating {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.yellow {
+  background: #A59400;
+}
+
+.green {
+  background: #308E21;
+}
+
+.gray {
+  background: #777777;
+}
+
+.red {
+  background: #C82020;
+}
+
+.year,
+.genres,
+.runtime {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin: 0;
+  ;
+
+  @include vp-375 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.plot {
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFFB2;
+  margin: 0;
+
+  @include vp-375 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.poster {
+  max-width: 680px;
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+  border-radius: 16px;
+
+  @include vp-375 {
+    min-height: 234px;
+    border-radius: 12px;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
